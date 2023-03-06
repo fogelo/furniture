@@ -226,6 +226,36 @@
     }
 }
 
+.decor {
+    padding: 170px 0 155px;
+    background-image: url(../images/decor-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    &__title {
+        min-width: 540px;
+        font-size: 60px;
+        line-height: 80px;
+        color: $title;
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+        position: relative;
+        &::after {
+            content: ""; 
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            background: #6d7278;
+            width: 200px;
+        }
+    }
+    &__text {
+        min-width: 540px;
+    }
+}
+
+
 .footer {
     &__content {
         background-color: #dfdfdf;
