@@ -256,6 +256,51 @@
 }
 
 
+.works-path {
+    padding: 79px 0 30px;
+    &__title {
+        @extend %title-font;
+        color: $title;
+        margin-bottom: 40px;
+        font-size: 36px;
+        line-height: 51px;
+        text-align: center;
+    }
+    &__items-box {
+        display: flex;
+        border-bottom: 1px solid rgba($title, .7);
+        position: relative;
+        align-items: start;
+        gap: 317px;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50px; 
+            background-color: $title;
+        }
+    }
+    &__item {
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__item-title {
+        margin-left: 14px;
+        color: $title;
+        @extend %title-font;
+    }
+    &__item-text {
+        margin-top: 13px;
+    }
+}
+
 .footer {
     &__content {
         background-color: #dfdfdf;
